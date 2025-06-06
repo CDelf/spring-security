@@ -12,6 +12,11 @@ public class PageController {
     @Autowired
     private ArticleRepository articleRepository;
 
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
     @GetMapping("/register")
     public String createUserPage() {
         return "register";

@@ -19,6 +19,10 @@ public class Article {
 
     private String contenu;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private UserApp auteur;
+
     public Article(String titre, String contenu) {
         this.titre = titre;
         this.contenu = contenu;

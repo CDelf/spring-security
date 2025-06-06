@@ -12,6 +12,7 @@
         <th>ID</th>
         <th>Titre</th>
         <th>Contenu</th>
+        <th>Auteur</th>
     </tr>
     </thead>
     <tbody>
@@ -19,6 +20,7 @@
         <td th:text="${article.id}">1</td>
         <td th:text="${article.titre}">Titre</td>
         <td th:text="${article.contenu}">Contenu</td>
+        <td th:text="${article.auteur.email}">Auteur</td>
     </tr>
     </tbody>
 </table>

@@ -5,14 +5,13 @@
     <title>Create article</title>
 </head>
 <body>
-<form th:action="@{/article/new}" method="post">
+<form th:action="@{/article/new}" method="post"><br/>
     <label>Titre : </label>
     <input type="text" name="titre"/> <br/>
 
     <label>Contenu : </label>
     <textarea name="contenu" rows="5" cols="30"></textarea>
     <button type="submit">Valider</button>
-
 </form>
 </body>
 </html>
